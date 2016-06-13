@@ -24,17 +24,12 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 	})
-	// .keydown(function(e){
-	// 	if (e.keyCode == 88) {
-	// 		$('.ryu-still').hide();
-	// 		$('.ryu-cool').show();
-	// 	}
-	// });
-	
-}).keydown(function(e){
+})
+.keydown(function(e){
 	if (e.keyCode == 88) {
 		$('.ryu-still').hide();
 		$('.ryu-cool').show();
+		$('.ryu-ready').hide();
 	}
 }).keyup(function(e){
 	if (e.keyCode == 88) {
